@@ -9,5 +9,5 @@
     "aws_profile": "default",
     "virtualenv": ["conda", "virtualenv"],
     "python_interpreter": ["python3", "python"],
-    "conda_path": "~/anaconda3/bin/conda"
+    "conda_path": $(shell which conda)
 }
