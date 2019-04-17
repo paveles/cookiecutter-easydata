@@ -154,6 +154,7 @@ delete_environment:
 ifeq (conda,$(VIRTUALENV))
 	@echo "Deleting conda environment."
 	$(CONDA_EXE) env remove -n $(PROJECT_NAME)
+	rm -f environment.lock
 endif
 
 
